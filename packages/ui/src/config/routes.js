@@ -1,4 +1,5 @@
 import React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 export default [
   {
@@ -9,7 +10,7 @@ export default [
   {
     label: 'Home',
     path: '/home',
-    screen: () => <h1>The home page</h1>,
+    screen: () => <Typography variant="display2">The home page</Typography>,
     icon: 'home'
   },
   {
@@ -20,13 +21,17 @@ export default [
       {
         label: 'Foo',
         path: '/foo',
-        screen: () => <h1>A foo component</h1>,
+        screen: () => (
+          <Typography variant="display2">A foo component</Typography>
+        ),
         icon: 'multiline_chart'
       },
       {
         label: 'Bar',
         path: '/bar',
-        screen: () => <h1>A bar component</h1>,
+        screen: () => (
+          <Typography variant="display2">A bar component</Typography>
+        ),
         icon: 'border_all'
       }
     ]

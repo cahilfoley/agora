@@ -14,6 +14,7 @@ import Icon from '@material-ui/core/Icon'
 import normalize from 'utils/transforms/normalizeUrl'
 import routes from 'config/routes'
 import styles from './styles'
+import Typography from '@material-ui/core/Typography'
 
 class AppDrawer extends React.Component {
   static propTypes = {
@@ -84,8 +85,28 @@ class AppDrawer extends React.Component {
     // Main content of the drawer
     const drawer = (
       <React.Fragment>
-        {/* Team logo */}
-        <img className={classes.brandLogo} src={'/bla'} alt="Agora UI Logo" />
+        <img
+          className={classes.brandLogo}
+          src={`/assets/brand/agora_rocket_circle${
+            theme.palette.type === 'light' ? '' : '_inverse'
+          }_prod.svg`}
+          alt="Agora UI Logo"
+        />
+        <Typography
+          className={classes.brandName}
+          variant="display2"
+          color="secondary"
+          align="center"
+        >
+          Agora
+        </Typography>
+        <Typography
+          className={classes.brandTagline}
+          variant="subheading"
+          align="center"
+        >
+          Web Playground
+        </Typography>
         {/* List of navigation links */}
         <List className={classes.navLinks}>
           {/* Don't need to show links for redirect items */}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" width="300" height="300" x="0px" y="0px" version="1.1" viewBox="0 0 300 300" inkscape:label="rocket" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="agora_rocket_new_flame.svg" xml:space="preserve">
+    <metadata id="metadata76">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>
+                    image/svg+xml
+                </dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs74"/>
+    <sodipodi:namedview id="namedview72" bordercolor="#666666" borderopacity="0" gridtolerance="10" guidetolerance="10" objecttolerance="10" pagecolor="#ffffff" showgrid="false" inkscape:current-layer="svg2" inkscape:cx="167.12604" inkscape:cy="117.62471" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1526" inkscape:window-maximized="1" inkscape:window-width="3840" inkscape:window-x="-11" inkscape:window-y="690" inkscape:zoom="2.6074563"/>
+    <style id="style4" type="text/css">
+        /* .mo-fire svg { width: 100%; height: auto; position: relative } */ .flame { /* animation-name: flame; */ animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; opacity: 0; } .flame.one { animation-delay: 1s; /* animation-duration: 3s; */ } .flame3.two { animation-duration: 1s; /* animation-delay: 1s; */ } .flame-main { transform-origin: top right; animation-name: flame, wobble; animation-duration: 1s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; } .flame-main.one { animation-duration: 1s; } .flame-main.two { animation-duration: 1s; animation-delay: 200ms; } .flame-main.three { animation-duration: 1s; animation-delay: 400ms; } .flame-main.four { animation-duration: 1s; animation-delay: 600ms; } .flame-main.five { animation-duration: 1s; animation-delay: 800ms; } @keyframes flame { 50% { transform: scale(1.20, 1.20) translate(40px, -40px); } } @keyframes wobble { 25% { transform: rotate(2); } 75% { transform: rotate(-2); } }
+    </style>
+    <style>
+        /* .mo-fire svg { width: 100%; height: auto; position: relative } */ .flame { /* animation-name: flame; */ animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; opacity: 0; } .flame.one { animation-delay: 1s; /* animation-duration: 3s; */ } .flame3.two { animation-duration: 1s; /* animation-delay: 1s; */ } .flame-main { transform-origin: top right; animation-name: flame; animation-duration: 1s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; } .flame-main.one { animation-duration: 1s; } .flame-main.two { animation-duration: 1s; /* animation-delay: 400ms; */ } .flame-main.three { animation-duration: 1s; /* animation-delay: 600ms; */ } .flame-main.four { animation-duration: 1s; /* animation-delay: 800ms; */ } .flame-main.five { animation-duration: 1s; /* animation-delay: 5s; */ } @keyframes flame { 50% { transform: scale(1.20, 1.20) translate(40px, -40px); } } /* @keyframes wobble { 0% { transform: translate(0) rotate(180deg); } 50% { opacity: 1; } 100% { transform: translate(-20px, -100px) rotate(180deg); opacity: 0; } */
+    </style>
+    <g id="g1002">
+        <g id="rocket.fin.bottom.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3912">
+                Bottom Fin Shadow
+            </title>
+            <path id="path13" d="M 32.1,39.7 C 30.5,41.2 26,52.2 26,52.2 c -0.7,1.2 0.3,2.1 2.6,0.9 l 8.1,-4.4 c 4.4,-2.4 5.2,-3.1 5.2,-8 l -0.8,-5.9 c -0.3,-2 -1.8,-2.4 -3.3,-0.8 z" class="st2" style="fill:#231f20" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.fin.top.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3908">
+                Top Fin Shadow
+            </title>
+            <path id="path17" d="m 27.1,34.7 c -1.6,1.6 -12.5,6.1 -12.5,6.1 -1.2,0.7 -2.1,-0.3 -0.9,-2.6 L 18,30 c 2.4,-4.4 3.1,-5.2 8,-5.2 l 5.9,0.8 c 2,0.3 2.4,1.8 0.8,3.3 z" class="st2" style="fill:#231f20" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.fin.bottom" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3910">
+                Bottom Fin
+            </title>
+            <path id="path21" d="M 32.1,37.7 C 30.5,39.2 26,50.2 26,50.2 c -0.7,1.2 0.3,2.1 2.6,0.9 l 8.1,-4.4 c 4.4,-2.4 5.2,-3.1 5.2,-8 l -0.8,-5.9 c -0.3,-2 -1.8,-2.4 -3.3,-0.8 z" class="st3" style="fill:#c75c5c" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.fin.top" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3906">
+                Top Fin
+            </title>
+            <path id="path25" d="m 27.1,32.7 c -1.6,1.6 -12.5,6.1 -12.5,6.1 -1.2,0.7 -2.1,-0.3 -0.9,-2.6 L 18,28 c 2.4,-4.4 3.1,-5.2 8,-5.2 l 5.9,0.8 c 2,0.3 2.4,1.8 0.8,3.3 z" class="st3" style="fill:#c75c5c" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.body.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3904">
+                Body Shadow
+            </title>
+            <path id="path41" d="m 43.6,37.1 c -7.8,7.8 -19.8,5.7 -19.8,5.7 0,0 -2.1,-12 5.7,-19.8 7.8,-7.8 19.6,-8.6 21.2,-7.1 1.5,1.5 0.7,13.4 -7.1,21.2 z" class="st2" style="fill:#231f20" inkscape:connector-curvature="0"/>
+        </g>
+        <path id="path912" d="m 113.9178,194.08367 c 0,0 3.62666,9.96472 2.44233,17.22085 -1.18433,7.25613 -8.06373,17.43473 -8.06373,17.43473 0,0 -5.2145,4.12913 -12.433483,14.26434 0,0 2.017501,-5.64714 4.988683,-9.99588 0,0 -13.853862,16.75807 -25.528936,16.62706 -11.67588,-0.13042 -29.073453,20.64626 -28.918668,24.03278 0,0 -3.191608,-13.87257 26.54938,-44.16105 29.739594,-30.28868 26.546839,-40.38227 39.905374,-36.86468" class="flame-main" style="fill:#f36e21" inkscape:connector-curvature="0"/>
+        <path id="path914" d="m 71.268257,243.84799 c -14.848852,5.79839 -18.837018,-1.17359 -42.199487,45.3752 0,0 -10.713582,-31.85519 19.735397,-79.76147 30.448174,-47.90569 60.948993,-20.14088 61.260433,-20.624 0.31085,-0.48392 11.26821,15.79553 -6.15388,22.92688 -17.422097,7.13136 -17.794417,26.28559 -32.642463,32.08339 z" class="flame-main one" style="fill:#f6891f" inkscape:connector-curvature="0"/>
+        <path id="path916" d="m 24.741619,253.25158 c 0,0 13.187113,-24.0157 30.107701,-26.61343 16.921181,-2.59693 46.27478,-7.77682 52.6369,-38.135 0,0 -51.022866,-13.20484 -82.744601,64.74843 z" class="flame-main two" style="fill:#ffd04a" inkscape:connector-curvature="0"/>
+        <path id="path918" d="m 32.114188,225.17621 c 0,0 51.640205,-9.1345 71.663452,-37.69495 0,0 -32.336099,-16.87279 -48.808106,10.90068 -16.473192,27.77186 -12.898609,19.48095 -22.855346,26.79427 z" class="flame-main three" style="fill:#fdba16" inkscape:connector-curvature="0"/>
+        <path id="path920" d="m 33.561416,220.11421 c 0,0 19.500853,-25.3999 38.39082,-26.90431 18.889375,-1.50522 32.166384,-5.26441 32.166384,-5.26441 0,0 -41.754899,-27.75341 -70.557204,32.16872 z" class="flame-main four" style="fill:#f36e21" inkscape:connector-curvature="0"/>
+        <path id="path922" d="m 56.481054,254.26762 c 0,0 63.734246,-27.40162 56.353286,-54.45609 -7.38075,-27.05586 -39.057396,33.08657 -56.353286,54.45609 z" class="flame-main five" style="fill:#fdba16" inkscape:connector-curvature="0"/>
+        <path id="path924" d="m 40.472439,217.68331 c 0,0 3.165978,-13.45885 10.635812,-13.46504 3.882884,4.83702 -10.423702,6.186 -10.635812,13.46504 z" class="flame" style="fill:#f36e21" inkscape:connector-curvature="0"/>
+        <path id="path926" d="m 78.584892,246.04377 c 0,0 12.971881,-4.78948 12.059112,-12.20637 -5.271114,-3.259 -7.886189,8.75048 -12.059112,12.20637 z" class="flame one" style="fill:#f36e21" inkscape:connector-curvature="0"/>
+        <path id="path928" d="m 61.044188,259.76387 c 0,0 7.267214,-0.42564 7.946525,-4.29825 -2.157234,-2.45047 -4.150624,4.84779 -7.946525,4.29825 z" class="flame two" style="fill:#f36e21" inkscape:connector-curvature="0"/>
+        <g id="rocket.body" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3902">
+                Body
+            </title>
+            <path id="path45" d="m 43.6,35.1 c -7.8,7.8 -19.8,5.7 -19.8,5.7 0,0 -2.1,-12 5.7,-19.8 7.8,-7.8 19.6,-8.6 21.2,-7.1 1.5,1.5 0.7,13.4 -7.1,21.2 z" class="st6" style="fill:#e0e0d1" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.fin.middle.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3916">
+                Middle Fin Shadow
+            </title>
+            <path id="path49" d="m 21,47 c -0.8,0.8 -1.3,1.5 -2.1,0.7 v 0 c -0.8,-0.8 -0.1,-1.3 0.7,-2.1 l 9.9,-12.7 c 0.8,-0.8 4.2,-1.5 4.9,-0.7 v 0 c 0.8,0.8 0.1,4.2 -0.7,4.9 z" class="st2" style="fill:#231f20" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.fin.middle" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3914">
+                Middle Fin
+            </title>
+            <path id="path53" d="m 21,45 c -0.8,0.8 -1.3,1.5 -2.1,0.7 v 0 c -0.8,-0.8 -0.1,-1.3 0.7,-2.1 l 9.9,-12.7 c 0.8,-0.8 4.2,-1.5 4.9,-0.7 v 0 c 0.8,0.8 0.1,4.2 -0.7,4.9 z" class="st3" style="fill:#c75c5c" inkscape:connector-curvature="0"/>
+        </g>
+        <g id="rocket.window.large.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3900">
+                Large Window Shadow
+            </title>
+            <circle id="circle57" cx="39.599998" cy="27.1" r="4" class="st2" style="fill:#231f20"/>
+        </g>
+        <g id="rocket.window.small.shadow" class="st1" style="opacity:0.2" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3898">
+                Small Window Shadow
+            </title>
+            <circle id="circle61" cx="45.299999" cy="21.5" r="2" class="st2" style="fill:#231f20"/>
+        </g>
+        <g id="rocket.window.large" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3896">
+                Large Window
+            </title>
+            <circle id="circle65" cx="39.599998" cy="25.1" r="4" class="st0" style="fill:#4f5d73"/>
+        </g>
+        <g id="rocket.window.small" transform="matrix(7.4280115,0,0,7.4280115,-90.832683,-98.63662)">
+            <title id="title3894">
+                Small Window
+            </title>
+            <circle id="circle69" cx="45.299999" cy="19.5" r="2" class="st0" style="fill:#4f5d73"/>
+        </g>
+    </g>
+</svg>

@@ -34,13 +34,14 @@ const getRoute = (parentPath = '/') => ({
 }
 
 const App = ({ dark }) => (
-  <ConnectedRouter history={history}>
-    <MuiThemeProvider theme={dark ? darkTheme : lightTheme}>
-      <AppFrame noContentPadding>
+  <MuiThemeProvider theme={dark ? darkTheme : lightTheme}>
+    <CssBaseline />
+    <ConnectedRouter history={history}>
+      <AppFrame>
         <Switch>{routes.map(getRoute())}</Switch>
       </AppFrame>
-    </MuiThemeProvider>
-  </ConnectedRouter>
+    </ConnectedRouter>
+  </MuiThemeProvider>
 )
 
 const mapStateToProps = ({ ui }) => ({ dark: ui.darkTheme })

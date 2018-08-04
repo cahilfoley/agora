@@ -25,8 +25,16 @@ export default theme => ({
     color: theme.palette.text.secondary
   },
   brandLogo: {
-    padding: theme.spacing.unit * 2,
-    width: '100%'
+    margin: `${theme.spacing.unit * 4}px ${drawerWidth / 4}px 0`,
+    width: drawerWidth / 2,
+    height: drawerWidth / 2
+  },
+  brandName: {
+    fontWeight: 600
+  },
+  brandTagline: {
+    letterSpacing: 4,
+    marginTop: theme.spacing.unit
   },
   drawerPaper: {
     borderRight: 0,

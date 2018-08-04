@@ -1,0 +1,70 @@
+/* .mo-fire svg {
+  width: 100%;
+  height: auto;
+  position: relative
+} */
+
+.flame {
+  /* animation-name: flame; */
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.flame.one {
+  animation-delay: 1s;
+  /* animation-duration: 3s; */
+}
+
+.flame3.two {
+  animation-duration: 1s;
+  /* animation-delay: 1s; */
+}
+
+.flame-main {
+  transform-origin: top right;
+  animation-name: flame, wobble;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.flame-main.one {
+  animation-duration: 1s;
+}
+
+.flame-main.two {
+  animation-duration: 1s;
+  animation-delay: 200ms;
+}
+
+.flame-main.three {
+  animation-duration: 1s;
+  animation-delay: 400ms;
+}
+
+.flame-main.four {
+  animation-duration: 1s;
+  animation-delay: 600ms;
+}
+
+.flame-main.five {
+  animation-duration: 1s;
+  animation-delay: 800ms;
+}
+
+@keyframes flame {
+  50% {
+    transform: scale(1.20, 1.20) translate(40px, -40px);
+  }
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(2);
+  }
+  75% {
+    transform: rotate(-2);
+  }
+}
