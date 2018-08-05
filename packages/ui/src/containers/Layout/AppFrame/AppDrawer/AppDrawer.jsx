@@ -10,11 +10,13 @@ import ListItemText from '@material-ui/core/ListItemText'
 import Collapse from '@material-ui/core/Collapse'
 import Hidden from '@material-ui/core/Hidden'
 import Icon from '@material-ui/core/Icon'
-
-import normalize from 'utils/transforms/normalizeUrl'
-import routes from 'config/routes'
-import styles from './styles'
 import Typography from '@material-ui/core/Typography'
+
+import NavItem from './NavItem'
+import normalizeUrl from '@cahil/utils/transforms/normalizeUrl'
+import routes from 'config/routes'
+import { title, tagline } from 'config/meta'
+import styles from './styles'
 
 class AppDrawer extends React.Component {
   static propTypes = {
@@ -56,32 +58,6 @@ class AppDrawer extends React.Component {
   render() {
     const { classes, currentPath, mobileOpen, theme, toggleDrawer } = this.props
 
-    const NavItem = route => {
-      const { label, icon, active, inset } = route
-      return (
-        <ListItem
-          button
-          className={`${active ? classes.activeListItem : ''} ${
-            inset ? classes.nestedLink : ''
-          }`}
-          onClick={this.handleClickLink(route)}
-        >
-          <ListItemIcon>
-            <Icon className={active ? classes.activeListItemText : undefined}>
-              {icon}
-            </Icon>
-          </ListItemIcon>
-          <ListItemText
-            inset={inset}
-            classes={{
-              primary: active ? classes.activeListItemText : undefined
-            }}
-            primary={label}
-          />
-        </ListItem>
-      )
-    }
-
     // Main content of the drawer
     const drawer = (
       <React.Fragment>
@@ -98,14 +74,14 @@ class AppDrawer extends React.Component {
           color="secondary"
           align="center"
         >
-          Agora
+          {title}
         </Typography>
         <Typography
           className={classes.brandTagline}
           variant="subheading"
           align="center"
         >
-          Web Playground
+          {tagline}
         </Typography>
         {/* List of navigation links */}
         <List className={classes.navLinks}>
@@ -152,12 +128,15 @@ class AppDrawer extends React.Component {
                         .filter(child => !child.redirect)
                         // Add a nav item for each route
                         .map(childRoute => {
-                          const path = normalize(parentPath, childRoute.path)
+                          const path = normalizeUrl(parentPath, childRoute.path)
                           return (
                             <NavItem
                               {...childRoute}
                               key={path}
-                              path={path}
+                              onClick={this.handleClickLink({
+                                ...childRoute,
+                                path
+                              })}
                               active={currentPath.startsWith(
                                 path.split('/:')[0]
                               )}
@@ -170,7 +149,14 @@ class AppDrawer extends React.Component {
                 </React.Fragment>
               )
             } else {
-              return <NavItem key={route.path} {...route} active={active} />
+              return (
+                <NavItem
+                  key={route.path}
+                  {...route}
+                  onClick={this.handleClickLink(route)}
+                  active={active}
+                />
+              )
             }
           })}
         </List>

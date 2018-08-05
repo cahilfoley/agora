@@ -1,5 +1,8 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
+import asyncScreen from 'components/Utils/AsyncScreen'
+
+const Visualizations = asyncScreen(() => import('screens/Visualizations'))
 
 export default [
   {
@@ -14,25 +17,23 @@ export default [
     icon: 'home'
   },
   {
-    label: 'FooBar',
-    path: '/foobar',
-    icon: 'build',
+    label: 'Projects',
+    path: '/projects',
+    icon: 'memory',
     children: [
       {
-        label: 'Foo',
-        path: '/foo',
+        label: 'Animations',
+        path: '/animations',
         screen: () => (
           <Typography variant="display2">A foo component</Typography>
         ),
-        icon: 'multiline_chart'
+        icon: 'movie'
       },
       {
-        label: 'Bar',
-        path: '/bar',
-        screen: () => (
-          <Typography variant="display2">A bar component</Typography>
-        ),
-        icon: 'border_all'
+        label: 'Data Visuals',
+        path: '/visualizations',
+        screen: Visualizations,
+        icon: 'bar_chart'
       }
     ]
   }
