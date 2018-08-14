@@ -51,10 +51,10 @@ class Visualizations extends React.Component {
               spacing={24}
               classes={{ container: classes.demoWrapper }}
             >
-              <Grid item md={6}>
+              <Grid item md={6} sm={12} classes={{ item: classes.demoItem }}>
                 <DemoTree data={parsedData.tree} />
               </Grid>
-              <Grid item md={6}>
+              <Grid item md={6} sm={12} classes={{ item: classes.demoItem }}>
                 <AceEditor
                   mode="json"
                   theme="monokai"

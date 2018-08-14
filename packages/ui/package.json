@@ -6,37 +6,37 @@
     "@cahil/utils": "^0.1.0",
     "@material-ui/core": "^1.4.1",
     "@tensorflow/tfjs": "^0.12.4",
-    "@vx/annotation": "0.0.170",
-    "@vx/axis": "0.0.170",
+    "@vx/annotation": "0.0.171",
+    "@vx/axis": "0.0.171",
     "@vx/brush": "0.0.165",
     "@vx/curve": "0.0.165",
     "@vx/drag": "0.0.165",
     "@vx/event": "0.0.165",
     "@vx/glyph": "0.0.170",
     "@vx/gradient": "0.0.165",
-    "@vx/grid": "0.0.170",
+    "@vx/grid": "0.0.171",
     "@vx/group": "0.0.170",
     "@vx/hierarchy": "0.0.170",
-    "@vx/marker": "0.0.170",
+    "@vx/marker": "0.0.171",
     "@vx/mock-data": "0.0.165",
     "@vx/pattern": "0.0.165",
     "@vx/point": "0.0.165",
     "@vx/responsive": "0.0.165",
     "@vx/scale": "0.0.165",
-    "@vx/shape": "0.0.170",
+    "@vx/shape": "0.0.171",
     "@vx/text": "0.0.165",
     "@vx/zoom": "0.0.165",
     "brace": "^0.11.1",
     "connected-react-router": "^4.3.0",
     "history": "^4.7.2",
     "localforage": "^1.7.2",
-    "p5": "^0.6.1",
+    "p5": "^0.7.1",
     "react": "^16.4.1",
     "react-ace": "^6.1.4",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "2.0.0-next.3e165448",
     "redux": "^4.0.0",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0"
@@ -54,5 +54,17 @@
     "eslint-plugin-prettier": "^2.6.2",
     "prettier-eslint": "^8.8.2",
     "redux-logger": "^3.0.6"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">0.25%",
+      "not op_mini all",
+      "ie 11"
+    ]
   }
 }

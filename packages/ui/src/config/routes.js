@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import asyncScreen from 'components/Utils/AsyncScreen'
 
+const Animations = asyncScreen(() => import('screens/Animations'))
 const Visualizations = asyncScreen(() => import('screens/Visualizations'))
 
 export default [
@@ -24,9 +25,7 @@ export default [
       {
         label: 'Animations',
         path: '/animations',
-        screen: () => (
-          <Typography variant="display2">A foo component</Typography>
-        ),
+        screen: Animations,
         icon: 'movie'
       },
       {

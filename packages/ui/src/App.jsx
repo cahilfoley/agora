@@ -9,7 +9,7 @@ import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import { lightTheme, darkTheme } from 'config/theme'
 import routes from 'config/routes'
 import normalizeUrl from '@cahil/utils/transforms/normalizeUrl'
-import AppFrame from 'containers/Layout/AppFrame'
+import AppFrame from 'components/Layout/AppFrame'
 
 const getRoute = (parentPath = '/') => ({
   children,

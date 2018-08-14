@@ -1,0 +1,31 @@
+{
+  "name": "@cahil/tools",
+  "version": "0.1.0",
+  "author": "Cahil Foley",
+  "license": "MIT",
+  "files": [
+    "babel.config.js",
+    "eslint.config.js",
+    "jest.config.js",
+    "prettier.config.js"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/plugin-external-helpers": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.20.2",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier-eslint": "^8.8.2",
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.3"
+  }
+}
