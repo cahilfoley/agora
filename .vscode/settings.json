@@ -1,6 +1,6 @@
 {
     "editor.tabSize": 2,
-    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
     "eslint.autoFixOnSave": true,
     "files.associations": {
         "*.js": "javascriptreact"
