@@ -8,7 +8,7 @@ import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 
 import { lightTheme, darkTheme } from 'config/theme'
 import routes from 'config/routes'
-import normalizeUrl from '@cahil/utils/transforms/normalizeUrl'
+import normalizeURL from '@cahil/utils/dist/es/transforms/normalizeURL'
 import AppFrame from 'components/Layout/AppFrame'
 
 const getRoute = (parentPath = '/') => ({
@@ -19,7 +19,7 @@ const getRoute = (parentPath = '/') => ({
   screen
 }) => {
   // Safely join the parent and child paths
-  const path = normalizeUrl(parentPath, childPath)
+  const path = normalizeURL(parentPath, childPath)
 
   if (redirect) {
     // Redirect to a new path

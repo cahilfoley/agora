@@ -9,17 +9,15 @@ import smartRockets from 'content/sketches/smartRockets'
 
 class Animations extends React.Component {
   render() {
-    const { classes } = this.props
-
     return (
       <div>
         <Typography variant="display3" align="center">
-          Data Visualizations
+          Animations
         </Typography>
-        <Card>
+        <Card style={{ textAlign: 'center' }}>
           <CardHeader title="Smart Rockets" />
           <CardContent>
-            <P5Sketch sketch={smartRockets} />
+            <P5Sketch sketch={smartRockets} id="smartRockets" />
           </CardContent>
         </Card>
       </div>

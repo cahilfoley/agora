@@ -1,9 +1,9 @@
 class Obstacle {
-  constructor(x, y, w, h) {
-    this.left = Math.min(x, x + w)
-    this.right = Math.max(x, x + w)
-    this.top = Math.min(y, y + h)
-    this.bottom = Math.max(y, y + h)
+  constructor(x, y, x2, y2) {
+    this.left = Math.min(x, x2)
+    this.right = Math.max(x, x2)
+    this.top = Math.min(y, y2)
+    this.bottom = Math.max(y, y2)
 
     this.width = this.right - this.left
     this.height = this.bottom - this.top
@@ -12,11 +12,17 @@ class Obstacle {
   draw(p) {
     p.fill(255)
     p.noStroke()
-    p.rect(this.left, this.top, this.width, this.height)
+    p.rect(
+      this.left * p.width,
+      this.top * p.height,
+      this.width * p.width,
+      this.height * p.height
+    )
   }
 
   checkCollision(x, y) {
-    const { left, right, top, bottom } = this
+    const { left, top, right, bottom } = this
+
     if (x > left && x < right && y > top && y < bottom) {
       return true
     }

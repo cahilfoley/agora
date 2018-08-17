@@ -13,7 +13,7 @@ import Icon from '@material-ui/core/Icon'
 import Typography from '@material-ui/core/Typography'
 
 import NavItem from './NavItem'
-import normalizeUrl from '@cahil/utils/transforms/normalizeUrl'
+import normalizeURL from '@cahil/utils/dist/es/transforms/normalizeURL'
 import routes from 'config/routes'
 import { title, tagline } from 'config/meta'
 import styles from './styles'
@@ -128,7 +128,7 @@ class AppDrawer extends React.Component {
                         .filter(child => !child.redirect)
                         // Add a nav item for each route
                         .map(childRoute => {
-                          const path = normalizeUrl(parentPath, childRoute.path)
+                          const path = normalizeURL(parentPath, childRoute.path)
                           return (
                             <NavItem
                               {...childRoute}

@@ -4,14 +4,14 @@ import p5 from 'p5'
 class Rocket {
   constructor({
     dna = new DNA(),
-    pos = new p5.createVector(0.5, 0.95),
+    pos = new p5.Vector(0.5, 0.95),
     target
   } = {}) {
     this.dna = dna
     this.target = target
 
-    this.acc = p5.createVector()
-    this.vel = p5.createVector()
+    this.acc = new p5.Vector(0, 0)
+    this.vel = new p5.Vector(0, 0)
     this.pos = pos
 
     this.completed = false
@@ -29,7 +29,7 @@ class Rocket {
     }
 
     // Move to the position of the rocket
-    p.translate(this.pos.x, this.pos.y)
+    p.translate(this.pos.x * p.width, this.pos.y * p.height)
 
     // Rotate to face the direction the rocket is moving
     p.rotate(this.vel.heading())
@@ -45,13 +45,13 @@ class Rocket {
 
     // Check for collisions
     const distanceToTarget = p.dist(
-      this.pos.x,
-      this.pos.y,
-      this.target.x,
-      this.target.y
+      p.map(this.pos.x, 0, 1, 0, p.width),
+      p.map(this.pos.y, 0, 1, 0, p.height),
+      p.map(this.target.x, 0, 1, 0, p.width),
+      p.map(this.target.y, 0, 1, 0, p.height)
     )
 
-    if (distanceToTarget < 0.25) {
+    if (distanceToTarget < 25) {
       // Within the radius of target
       this.completed = true
       this.completedStep = this.step
@@ -88,9 +88,9 @@ class Rocket {
     this.acc.add(force)
   }
 
-  calculateFitness() {
-    const d = p5.dist(this.pos.x, this.pos.y, this.target.x, this.target.y)
-    this.fitness = p5.map(d, 0, 1, 1, 0)
+  calculateFitness(p) {
+    const d = p.dist(this.pos.x, this.pos.y, this.target.x, this.target.y)
+    this.fitness = p.map(d, 0, 1, 1, 0)
 
     // Big bonus for completing
     if (this.completed) {

@@ -1,26 +1,27 @@
 import Population from './models/Population'
 import DNA from './models/DNA'
 
-const sketch = p => {
+function sketch(p) {
   let population
   let mouseDownPoint = null
-  let speed = 1
+  // let speed = 1
 
-  p.setup = () => {
-    p.createCanvas(600, 600)
+  p.setup = function() {
+    const { canvas } = p.createCanvas(600, 600)
+    canvas.style.borderRadius = '4px'
     population = new Population()
   }
 
-  p.draw = () => {
-    p.background(0)
-    // for (let i = 0; i < speed; i++) {
-    population.update()
-    // }
+  p.draw = function() {
+    p.background(51)
+    population.update(p)
     population.draw(p)
     if (mouseDownPoint !== null) {
       p.fill(255)
       let { x, y } = mouseDownPoint
-      p.rect(x, y, p.mouseX - x, p.mouseY - y)
+      const xPos = p.map(x, 0, 1, 0, p.width)
+      const yPos = p.map(y, 0, 1, 0, p.height)
+      p.rect(xPos, yPos, p.mouseX - xPos, p.mouseY - yPos)
     }
     p.fill(255)
     p.text(`Mutation Rate: ${DNA.mutationRate}`, 10, p.height - 45)
@@ -29,13 +30,17 @@ const sketch = p => {
   }
 
   p.mousePressed = () => {
-    mouseDownPoint = p.createVector(p.mouseX, p.mouseY)
+    const x = p.map(p.mouseX, 0, p.width, 0, 1)
+    const y = p.map(p.mouseY, 0, p.height, 0, 1)
+    mouseDownPoint = p.createVector(x, y)
   }
 
   p.mouseReleased = () => {
     if (mouseDownPoint !== null) {
-      let { x, y } = mouseDownPoint
-      population.addObstacle(x, y, p.mouseX - x, p.mouseY - y)
+      const { x, y } = mouseDownPoint
+      const endX = p.map(p.mouseX, 0, p.width, 0, 1)
+      const endY = p.map(p.mouseY, 0, p.height, 0, 1)
+      population.addObstacle(x, y, endX, endY)
       mouseDownPoint = null
     }
   }

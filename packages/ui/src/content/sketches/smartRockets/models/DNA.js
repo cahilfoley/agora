@@ -1,13 +1,13 @@
-import { Vector } from 'p5'
+import p5 from 'p5'
 
 class DNA {
   static lifespan = 400
-  static maxForce = 0.05
+  static maxForce = 0.0005
   static mutationRate = 0.02
 
   constructor({ genes = [] } = {}) {
     while (genes.length < DNA.lifespan) {
-      const newForce = Vector.random2D()
+      const newForce = p5.Vector.random2D()
       newForce.setMag(DNA.maxForce)
       genes.push(newForce)
     }
@@ -17,7 +17,7 @@ class DNA {
 
   crossover(otherGenes) {
     const newGenes = []
-    const mid = Math.floor(Math.random(this.genes.length))
+    const mid = Math.floor(Math.random() * this.genes.length)
 
     for (let i = 0; i < DNA.lifespan; i++) {
       if (i < mid) {
@@ -35,7 +35,7 @@ class DNA {
   mutate() {
     for (let i = 0; i < DNA.lifespan; i++) {
       if (Math.random() < DNA.mutationRate) {
-        this.genes[i] = Vector.random2D()
+        this.genes[i] = p5.Vector.random2D()
         this.genes[i].setMag(DNA.maxForce)
       }
     }

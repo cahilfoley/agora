@@ -2,6 +2,9 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import asyncScreen from 'components/Utils/AsyncScreen'
 
+// import Animations from 'screens/Animations'
+// import Visualizations from 'screens/Visualizations'
+
 const Animations = asyncScreen(() => import('screens/Animations'))
 const Visualizations = asyncScreen(() => import('screens/Visualizations'))
 

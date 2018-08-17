@@ -1,14 +1,13 @@
+import p5 from 'p5'
 import DNA from './DNA'
 import Obstacle from './Obstacle'
 import Rocket from './Rocket'
-
-import p5 from 'p5'
 
 class Population {
   constructor({ size = 500 } = {}) {
     this.rockets = []
     this.obstacles = []
-    this.target = p5.Vector(0.5, 0.25)
+    this.target = new p5.Vector(0.5, 0.25)
     this.size = size
     this.step = 0
     this.failStreak = false
@@ -37,9 +36,9 @@ class Population {
     this.obstacles.forEach(obs => obs.draw(p))
   }
 
-  update() {
+  update(p) {
     this.rockets.forEach(rocket => {
-      rocket.update()
+      rocket.update(p)
       if (!rocket.crashed && !rocket.completed) {
         this.obstacles.forEach(obstacle => {
           if (obstacle.checkCollision(rocket.pos.x, rocket.pos.y)) {
@@ -52,22 +51,22 @@ class Population {
 
     if (this.step >= DNA.lifespan) {
       // Calculate fitness for all rockets and generate mating pool
-      this.evaluate()
+      this.evaluate(p)
 
       // Select parents from mating pool and create new population
-      this.naturalSelection()
+      this.naturalSelection(p)
 
       // Start steps again
       this.step = 0
     }
   }
 
-  evaluate() {
+  evaluate(p) {
     // Getting the max fitness
     let maxFitness = 0
     let numCompleted = 0
     this.rockets.forEach(rocket => {
-      rocket.calculateFitness()
+      rocket.calculateFitness(p)
       maxFitness = Math.max(maxFitness, rocket.fitness)
       if (rocket.completed) numCompleted++
     })
@@ -115,14 +114,14 @@ class Population {
     }
   }
 
-  naturalSelection() {
+  naturalSelection(p) {
     // Start a new population
     const newPopulation = []
 
     for (let i = 0; i < this.size; i++) {
       // Randomly select parents from mating pool
-      const parentA = p5.random(this.matingPool).dna
-      const parentB = p5.random(this.matingPool).dna
+      const parentA = p.random(this.matingPool).dna
+      const parentB = p.random(this.matingPool).dna
 
       // Crossover DNA to create child strain
       const newDNA = parentA.crossover(parentB)
